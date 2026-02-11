@@ -13,15 +13,14 @@
     <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
     <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
 
+    <!-- Camera hardware feature -->
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+
     <application
         android:label="object_detection_poc"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher"
         android:requestLegacyExternalStorage="true">
-        
-        <uses-feature android:name="android.hardware.camera" android:required="true"/>
-        <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
-        <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
         
         <activity
             android:name=".MainActivity"
